@@ -1,7 +1,7 @@
 @font-face {
     font-family: "a";
     /*中文字体*/
-    src: url();
+    src: url(../fonts/Muyao-Softbrush-2.ttf);
     font-display: swap;
 }
 
@@ -9,7 +9,7 @@
 @font-face {
     font-family: "b";
 
-    src: url(../fonts/Ubuntu-Regular.ttf);
+    src: url(../fonts/Cute-Aurora-2.ttf);
     font-display: swap;
 }
 
