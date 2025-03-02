@@ -120,7 +120,25 @@ document.addEventListener('DOMContentLoaded', function () {
         html.dataset.theme = theme;
         setCookie("themeState", theme, 365);
         themeState = theme;
-
+        if (theme == "Dark") {
+            // Add the script tag
+            var script = document.createElement('script');
+            script.src = "https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js";
+            script.id = "sakuraPlusScript";
+            document.head.appendChild(script);
+        }
+        else {
+            // Remove the script tag if it exists
+            var script = document.getElementById('sakuraPlusScript');
+            if (script) {
+                script.parentNode.removeChild(script);
+            }
+            // Remove the canvas elements
+            var sakuraCanvases = document.querySelectorAll('#canvas_sakura');
+            sakuraCanvases.forEach(function(canvas) {
+                canvas.parentNode.removeChild(canvas);
+            });
+        }
         
     }
 
@@ -135,20 +153,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (themeState == "Dark") {
             changeTheme("Light");
 
-            // Remove the script tag if it exists
-            var script = document.getElementById('sakuraPlusScript');
-            if (script) {
-                script.parentNode.removeChild(script);
-            }
+            
 
         } else if (themeState == "Light") {
             changeTheme("Dark");
 
-            // Add the script tag
-            var script = document.createElement('script');
-            script.src = "https://files.cnblogs.com/files/quaint/sakuraPlus.js";
-            script.id = "sakuraPlusScript";
-            document.head.appendChild(script);
+            
         } else {
             changeTheme("Dark");
         }
