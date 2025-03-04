@@ -242,19 +242,19 @@
 @media (min-width: 1624px) {
     .digital-clock-container .hours,
     .digital-clock-container .minutes {
-        font-size: 6vw; /* 设置最大字体大小 */
+        font-size: 6.6vw; /* 设置最大字体大小 */
     }
 
     .digital-clock-container .dots {
-        font-size: 3.8vw; /* 设置最大字体大小 */
+        font-size: 4vw; /* 设置最大字体大小 */
     }
 
     .digital-clock-container .period,
     .digital-clock-container .seconds {
-        font-size: 1.6vw; /* 设置最大字体大小 */
+        font-size: 2vw; /* 设置最大字体大小 */
     }
 
     .digital-clock-container .calender {
-        font-size: 1.6vw; /* 设置最大字体大小 */
+        font-size: 2vw; /* 设置最大字体大小 */
     }
 }
