@@ -146,7 +146,7 @@ body {
 
 
 
-.zyyo-filter {
+.rony-filter {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -157,7 +157,7 @@ body {
    
 }
 
-.zyyo-main {
+.rony-main {
     width: 100%;
     margin: 0 auto;
     transition: transform 0.5s ease;
@@ -168,7 +168,7 @@ body {
 }
 
 
-.zyyo-left {
+.rony-left {
     overflow-y: scroll;
     width: 230px;
     height: 100vh;
@@ -182,7 +182,7 @@ body {
 }
 
 
-.zyyo-left::-webkit-scrollbar {
+.rony-left::-webkit-scrollbar {
     display: none;
 }
 
@@ -294,7 +294,7 @@ body {
 
 
 
-.zyyo-right {
+.rony-right {
     width: calc(100% - 230px);
     display: flex;
     padding: 20px;
@@ -637,7 +637,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .zyyo-left {
+    .rony-left {
         display: none;
     }
 
@@ -670,7 +670,7 @@ footer {
 
 
 
-    .zyyo-right {
+    .rony-right {
         width: 100%;
     }
 
